@@ -5,6 +5,7 @@ import './index.css'
 import CounterApp from './useState/CounterApp.jsx'
 import CounterWithCustomHook from './useState/CounterWithCustomHook.jsx'
 import SimpleForm from './useEffect/SimpleForm.jsx'
+import FormWithCustomHook from './useEffect/FormWithCustomHook.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,5 +14,7 @@ createRoot(document.getElementById('root')).render(
     <CounterWithCustomHook />
     <br />
     <SimpleForm />
+    <br />
+    <FormWithCustomHook />
   </StrictMode>,
 )
