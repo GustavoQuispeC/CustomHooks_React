@@ -7,9 +7,16 @@ import CounterWithCustomHook from './useState/CounterWithCustomHook.jsx'
 import SimpleForm from './useEffect/SimpleForm.jsx'
 import FormWithCustomHook from './useEffect/FormWithCustomHook.jsx'
 import MultipleCustomHook from './examples/MultipleCustomHook.jsx'
+import FocusScreeen from './useRef/FocusScreeen.jsx'
+import Memorize from './Memo/Memorize.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Memorize />
+    <br />
+    <FocusScreeen />
+    <br />
     <MultipleCustomHook />
     <br />
     <CounterApp />
