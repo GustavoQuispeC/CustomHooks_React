@@ -9,10 +9,13 @@ import FormWithCustomHook from './useEffect/FormWithCustomHook.jsx'
 import MultipleCustomHook from './examples/MultipleCustomHook.jsx'
 import FocusScreeen from './useRef/FocusScreeen.jsx'
 import Memorize from './Memo/Memorize.jsx'
+import MemoHook from './Memo/MemoHook.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <MemoHook />
+    <br />
     <Memorize />
     <br />
     <FocusScreeen />
