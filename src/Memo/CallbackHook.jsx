@@ -21,7 +21,7 @@ const CallbackHook = () => {
       <h1>useCallback Hook: {counter}</h1>
       <hr />
       <ShowIncrement 
-        increment={increment}
+        // increment={increment}
       />
     </div>
   );
