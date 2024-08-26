@@ -12,12 +12,14 @@ import Memorize from "./Memo/Memorize.jsx";
 import MemoHook from "./Memo/MemoHook.jsx";
 import CallbackHook from "./Memo/CallbackHook.jsx";
 import { Padre } from "./tarea-memo/Padre.jsx";
+import './useReducer/intro-reducer'
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Padre/>
+    
+    {/* <Padre/>
     <br />
-    {/* <CallbackHook />
+    <CallbackHook />
     <br />
     <MemoHook />
     <br />
