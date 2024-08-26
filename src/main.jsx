@@ -11,10 +11,13 @@ import FocusScreeen from "./useRef/FocusScreeen.jsx";
 import Memorize from "./Memo/Memorize.jsx";
 import MemoHook from "./Memo/MemoHook.jsx";
 import CallbackHook from "./Memo/CallbackHook.jsx";
+import { Padre } from "./tarea-memo/Padre.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <CallbackHook />
+    <Padre/>
+    <br />
+    {/* <CallbackHook />
     <br />
     <MemoHook />
     <br />
@@ -30,6 +33,6 @@ createRoot(document.getElementById("root")).render(
     <br />
     <SimpleForm />
     <br />
-    <FormWithCustomHook />
+    <FormWithCustomHook /> */}
   </StrictMode>
 );
