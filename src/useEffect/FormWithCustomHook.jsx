@@ -1,8 +1,8 @@
 //import { useEffect } from "react";
-import { UserForm } from "../hooks/userForm";
+import { useForm } from "../hooks/useForm";
 
 const FormWithCustomHook = () => {
-  const { formState, onInputChange,onResetForm } = UserForm({
+  const { formState, onInputChange,onResetForm } = useForm({
     username: "",
     email: "",
     password: "",

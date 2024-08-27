@@ -1,12 +1,13 @@
 import { useState } from "react";
 
-export const UserForm = (initialForm = {}) => {
+export const useForm = (initialForm = {}) => {
   const [formState, setFormState] = useState(initialForm);
 
   const onInputChange = ({ target }) => {
+    const { name, value } = target;
     setFormState({
       ...formState,
-      [target.name]: target.value,
+      [name]: value,
     });
   };
 
@@ -15,8 +16,7 @@ export const UserForm = (initialForm = {}) => {
   };
 
   return {
-    // ...formState,
-    formState,
+    ...formState,  // Devuelve las propiedades del estado directamente
     onInputChange,
     onResetForm,
   };
