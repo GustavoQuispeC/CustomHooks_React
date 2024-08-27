@@ -17,7 +17,7 @@ const TodoList = ({ todos = [], onDeleteTodo, onToggleTodo }) => {
             key={todo.id}
             className="list-group-item d-flex justify-content-between"
           >
-            <p className={`align-self-center ${todo.done&&'text-decoration-line-through '}`} onClick={()=>handleToggleTodo(todo.id)}>
+            <p className={`align-self-center ${(todo.done)?'text-decoration-line-through':''}`} onClick={()=>handleToggleTodo(todo.id)}>
               {todo.description}
             </p>
             <button onClick={()=>handleDeleteTodo(todo.id)} className="btn btn-danger">
