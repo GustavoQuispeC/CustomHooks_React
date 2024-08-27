@@ -41,13 +41,26 @@ const TodoApp = () => {
     dispatch(action);
   };
 
+  const HandleToggleTodo = (todoId) => {
+    const action = {
+      type: "[TODO]Toggle Todo",
+      payload: todoId,
+    };
+    dispatch(action);
+    
+  }
+
   return (
     <>
       <h1>Todo App</h1>
       <hr />
       <div className="row">
         <div className="col-7">
-          <TodoList todos={todos} onDeleteTodo={HandleDeleteTodo} />
+          <TodoList 
+          todos={todos} 
+          onDeleteTodo={HandleDeleteTodo}
+          onToggleTodo={HandleToggleTodo}
+          />
         </div>
 
         <div className="col-5">
