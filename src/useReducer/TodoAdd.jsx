@@ -14,7 +14,7 @@ const TodoAdd = ({ onNewTodo }) => {
     // crear nuevo todo
     const newTodo = {
       id: new Date().getTime(),
-      description: description,
+      description,
       done: false,
     };
 
