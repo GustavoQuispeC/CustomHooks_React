@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 //import App from './App.jsx'
 import "./index.css";
-import TodoApp from "./useReducer/TodoApp";
+//import TodoApp from "./useReducer/TodoApp";
 // import CounterApp from "./useState/CounterApp.jsx";
 // import CounterWithCustomHook from "./useState/CounterWithCustomHook.jsx";
 // import SimpleForm from "./useEffect/SimpleForm.jsx";
@@ -14,12 +14,16 @@ import TodoApp from "./useReducer/TodoApp";
 // import CallbackHook from "./Memo/CallbackHook.jsx";
 // import { Padre } from "./tarea-memo/Padre.jsx";
 // import './useReducer/intro-reducer'
+import MainApp from "./useContext/MainApp";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
   <StrictMode>
-    <TodoApp />
+    <MainApp />
+    {/* <TodoApp />
     
-    {/* <Padre/>
+    <Padre/>
     <br />
     <CallbackHook />
     <br />
@@ -39,4 +43,6 @@ createRoot(document.getElementById("root")).render(
     <br />
     <FormWithCustomHook /> */}
   </StrictMode>
+  </BrowserRouter>
+  
 );
