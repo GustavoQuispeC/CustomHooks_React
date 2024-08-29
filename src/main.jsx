@@ -19,7 +19,7 @@ import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-  <StrictMode>
+  {/* <StrictMode> */}
     <MainApp />
     {/* <TodoApp />
     
@@ -42,7 +42,7 @@ createRoot(document.getElementById("root")).render(
     <SimpleForm />
     <br />
     <FormWithCustomHook /> */}
-  </StrictMode>
+  {/* </StrictMode> */}
   </BrowserRouter>
   
 );
