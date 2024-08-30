@@ -1,9 +1,8 @@
 import { useContext } from "react";
 import { UserContext } from "./context/userContext";
 
-
 const LoginPage = () => {
-  const { user,setUser } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
 
   return (
     <>
@@ -17,7 +16,7 @@ const LoginPage = () => {
           setUser({ id: 123, name: "Gustavo", email: "gustavo@gmail.com" });
         }}
       >
-        Establecer usuario
+         usuario
       </button>
     </>
   );
